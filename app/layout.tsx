@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type {Metadata} from "next";
 import "./globals.css";
+import {ReactNode} from "react";
+import {satoshi} from "@/public/font/font";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,11 +12,16 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="en">
+      <head>
+        <link rel='icon' href='/favicon.ico'/>
+        <meta charSet='utf-8'/>
+        <title>{String(metadata.title)}</title>
+      </head>
+      <body className={satoshi.className}>{children}</body>
+      </html>
   );
 }
