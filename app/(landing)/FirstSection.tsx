@@ -1,9 +1,8 @@
-import { NavigationBar } from '@/components/navigationBar'
+import { NavigationBar } from '@/components/NavigationBar'
 import { cn } from '@/utils'
 import { monument } from '@/public/font/font'
 
-export const FirstSection = () => {
-	return <div className="min-h-screen">
+export const FirstSection = () => <div className="min-h-screen">
 		<div className="relative">
 			<video loop autoPlay muted preload="none"
 						 className=" absolute inset-0  object-cover z-[-1] h-screen w-screen"
@@ -19,7 +18,7 @@ export const FirstSection = () => {
 		{
 			//  25% for adaptability since 480px out of 1920 is 25%
 		}
-		<div className="flex absolute w-full bottom-20 items-center mt-auto  px-[10%]">
+		<div className={cn("flex absolute w-full bottom-20 items-center mt-auto px-[8%]")}>
 			<div className="z-10">
 				<div className="mt-auto">
 					<h1
@@ -38,4 +37,3 @@ export const FirstSection = () => {
 			</div>
 		</div>
 	</div>
-}

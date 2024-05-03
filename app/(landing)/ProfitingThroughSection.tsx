@@ -2,8 +2,7 @@ import { cn } from '@/utils'
 import { monument } from '@/public/font/font'
 
 
-export const ProfitingThroughSection = () => {
-	return <div className="mt-[240px] px-[10%] w-full">
+export const ProfitingThroughSection = () => <div className="mt-[240px] px-[8%] w-full">
 		<div className='mb-[76px]'>
 			<h3
 				className={cn(`text-5xl uppercase xl:text-6xl`, monument.className)}
@@ -18,9 +17,9 @@ export const ProfitingThroughSection = () => {
 		</div>
 		<div className="flex">
 
-			<div className="w-2/3 ">
-				<div className=' h-full pr-[30px]'>
-					<div className="relative w-full  rounded-md overflow-hidden  ">
+			<div className="w-2/3">
+				<div className='h-full pr-[30px]'>
+					<div className="relative w-full rounded-[6px] overflow-hidden">
 						<video loop autoPlay muted preload="none" width={950} height={480}
 						>
 							<source src="../videos/creon-logo.mp4" type="video/mp4" />
@@ -31,6 +30,7 @@ export const ProfitingThroughSection = () => {
 						/>
 					</div>
 				</div>
+
 			</div>
 			<div className="w-1/3  px-[30px] border-x-2 border-greyLine">
 				<div className="block">
@@ -43,4 +43,3 @@ export const ProfitingThroughSection = () => {
 			</div>
 		</div>
 	</div>
-}
