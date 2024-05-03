@@ -32,10 +32,10 @@ interface NewsElementType {
 }
 
 const NewsElement = ({ title, description, image }:NewsElementType) => <div>
-	<div className="block md:flex md:gap-[30px] md:h-[280px] mb-[20px] bg-[#13171D] bg-opacity-60  rounded-md overflow-hidden z-50">
+	<div className="block duration-300 ease-in-out hover:-translate-y-2 md:flex md:gap-[30px] md:h-[300px] mb-[20px] bg-[#13171D] bg-opacity-60  rounded-md overflow-hidden z-50">
 		<div className="md:w-2/3 z-50 pr-0 p-[10px] md:p-[15px] 3xl:p-[40px]">
 			<h3
-				className={cn(`text-xl xl:text-xl 2xl:text-3xl uppercase pb-[15px] xl:pb-[20px]`, monument.className)}
+				className={cn(`text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl uppercase pb-[15px] xl:pb-[20px]`, monument.className)}
 			>
 				{title}
 			</h3>

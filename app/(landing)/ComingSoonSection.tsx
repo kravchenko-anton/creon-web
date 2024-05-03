@@ -32,22 +32,22 @@ interface ComingSoonElementType {
 }
 
 const ComingSoonElement = ({ heading, subHeading, picture, description }:ComingSoonElementType) => <div
-		className="bg-[#13171D] mb-8 md:mb-0 bg-opacity-60 rounded-lg relative p-2 xl:p-8 pl-0 md:w-[33%]">
+		className="bg-[#13171D] mb-8 md:mb-0 bg-opacity-60  rounded-lg relative p-2 xl:p-8 pl-0 xl:pl-0 md:w-[50%] duration-300 ease-in-out hover:-translate-y-4">
 		<p className='uppercase text-[12px] font-extrabold bg-white p-1 rounded-full absolute -top-3 right-5'>Coming soon</p>
 		<div className='pt-4 xl:pt-0 xl:h-[180px]'>
 			<h3
-				className={cn(`text-3xl uppercase pl-2 xl:pb-[30px] xl:pl-8`, monument.className)}
+				className={cn(`text-xl xl:text-3xl uppercase pl-2 xl:pb-[30px] xl:pl-8`, monument.className)}
 			>
 				{heading}
 			</h3>
-			<h3 className="font-bold mb-[40px] pl-2 xl:pl-8  gradientText text-xl not-italic"> {subHeading}</h3>
+			<h3 className="font-bold mb-[40px] pl-2 xl:pl-8  gradientText text-md xl:text-xl not-italic"> {subHeading}</h3>
 		</div>
 		<Image alt={'Creon'} width={423}
 					 height={234}
 					 src={picture}
 		/>
 
-		<p className="text-white font-light text-md xl:text-xl pl-2 mb-2 xl:pl-8 mt-[30px]">
+		<p className="text-white font-light text-sm xl:text-md xl:text-xl pl-2 mb-2 xl:pl-8 mt-[30px]">
 			{description}
 		</p>
 	</div>

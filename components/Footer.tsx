@@ -43,7 +43,7 @@ const SocialMediaLinks = [
 ]
 
 export const Footer = () => <div
-	className="md:h-[84px] z-50 items-center md:flex justify-between px-[2%] md:px-[8%]">
+	className="md:h-[84px] z-50 items-center md:flex justify-between px-[2%] xl:px-[8%]">
 	<div className='flex gap-[90px]'>
 		<p className="text-sm text-white font-light">
 			© Creon 2023. All rights reserved.

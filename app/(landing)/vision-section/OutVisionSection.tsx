@@ -11,7 +11,7 @@ import { LaunchingTheFuture } from '@/app/(landing)/vision-section/icons/Launchi
 import { LimitlessPossibilitiesOfAiCrypto } from '@/app/(landing)/vision-section/icons/LimitlessPossibilitiesOfAiCrypto'
 
 
-export const OutVisionSection = () => <div className={'xl:flex xl:gap-[180px] xl:justify-between mx-[2%] xl:mx-[8%]  mt-[230px]'}>
+export const OutVisionSection = () => <div className={'xl:flex xl:gap-[80px] 2xl:gap-[180px] xl:justify-between mx-[2%] xl:mx-[8%]  mt-[230px]'}>
 
 				<div className='xl:w-2/3'>
 					<h3
