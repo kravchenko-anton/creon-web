@@ -4,12 +4,12 @@
 
 
 body {
-  @apply bg-black h-full text-white;
+    @apply bg-black h-full text-white;
 }
 
 
 .gradientText {
-  @apply bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] text-transparent bg-clip-text font-semibold;
+    @apply bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] text-transparent bg-clip-text font-semibold;
 }
 
 h1,
@@ -18,42 +18,41 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-semibold text-white;
+    @apply font-semibold text-white;
 }
 
 p,
 span,
 a,
 li {
-  @apply text-greyText font-medium;
+    @apply text-greyText font-medium;
 }
 
 .no-scrollbar {
-  ::-webkit-scrollbar {
-    display: none;
-    height: 0;
-    width: 0;
-  }
+    ::-webkit-scrollbar {
+        display: none;
+        height: 0;
+        width: 0;
+    }
 }
 
 ::-webkit-scrollbar {
-  width: 0rem;
-  height: 0rem;
+    width: 0rem;
+    height: 0rem;
 }
 
 
-
 ::-webkit-scrollbar-thumb {
-  @apply bg-greyLine cursor-pointer;
+    @apply bg-greyLine cursor-pointer;
 }
 
 
 ::-webkit-scrollbar-track {
-  @apply bg-transparent;
+    @apply bg-transparent;
 }
 
 ::-webkit-scrollbar-corner {
-  @apply bg-transparent;
+    @apply bg-transparent;
 }
 
 
