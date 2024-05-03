@@ -35,7 +35,11 @@ export const FirstSection = () => (
 						The world's first <br /> platform for Tokenizing <br /> AI
 						blockchain projects
 					</h1>
-					<h3 className='gradientText mt-[40px] w-fit border-b border-t p-1 text-md font-bold xl:text-xl'>
+					<h3
+						className='gradientText mt-[40px] w-fit border-b border-t p-1 text-md font-bold xl:text-xl'
+						style={{
+							borderImage: 'linear-gradient(to right, #3D8BFF, #AB23FF) 1'
+						}}>
 						Hold the Creon Pass NFT and earn passive income from AI Tools
 					</h3>
 				</div>

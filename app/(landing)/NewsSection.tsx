@@ -58,7 +58,7 @@ const NewsElement = ({ title, description, image }: NewsElementType) => (
 )
 
 export const NewsSection = () => (
-	<div className={cn(`mt-[230px]`)}>
+	<div className='mt-[230px]'>
 		<div className='relative h-full'>
 			<video
 				loop

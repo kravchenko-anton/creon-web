@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const SocialMediaLinks = [
+export const SocialMediaLinks = [
 	{
 		title: 'Telegram',
 		link: 'https://t.me/',

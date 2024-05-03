@@ -10,6 +10,7 @@ import {
 } from '@/components/Sheet'
 import { Menu, X } from 'lucide-react'
 import * as React from 'react'
+import { SocialMediaLinks } from '@/components/Footer'
 
 const navigationElements = [
 	{
@@ -81,27 +82,43 @@ export const NavigationBar = () => (
 							</SheetClose>
 						</div>
 					</SheetHeader>
-					<div className='mt-[48px] flex flex-col gap-4'>
-						{navigationElements.map(element => (
-							<div
-								className='flex  gap-1 border-t-2 border-greyLine pt-4'
-								key={element.link}>
-								<SheetClose className='w-full'>
-									<a href={element.link} className='w-full'>
-										<div className='flex'>
-											<p className=' flex text-md  text-white'>
-												{element.title}
-											</p>
-											{element.isSoon ? (
-												<div className='z-50 rounded-full bg-black px-1.5'>
-													<p className=' gradientText'>Soon</p>
-												</div>
-											) : null}
-										</div>
-									</a>
-								</SheetClose>
-							</div>
-						))}
+					<div className=' flex h-full flex-col justify-between'>
+						<div className='mt-[48px] flex flex-col gap-4'>
+							{navigationElements.map(element => (
+								<div
+									className='flex  gap-1 border-t-2 border-greyLine pt-4'
+									key={element.link}>
+									<SheetClose className='w-full'>
+										<a href={element.link} className='w-full'>
+											<div className='flex'>
+												<p className=' flex text-md  text-white'>
+													{element.title}
+												</p>
+												{element.isSoon ? (
+													<div className='z-50 rounded-full bg-black px-1.5'>
+														<p className=' gradientText'>Soon</p>
+													</div>
+												) : null}
+											</div>
+										</a>
+									</SheetClose>
+								</div>
+							))}
+						</div>
+						<div className=' flex gap-2'>
+							{SocialMediaLinks.map(element => (
+								<a href={element.link}>
+									<Image
+										className='cursor-pointer'
+										src={element.icon}
+										width={32}
+										height={32}
+										key={element.title}
+										alt={element.title}
+									/>
+								</a>
+							))}
+						</div>
 					</div>
 				</SheetContent>
 			</Sheet>
