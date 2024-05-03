@@ -73,7 +73,7 @@ export const NavigationBar = () => (
 					<SheetHeader>
 						<div className='absolute right-4 top-4 flex  items-center'>
 							<Button className='ml-auto mr-4' variant='outline'>
-								Connect{' '}
+								Connect
 							</Button>
 							<SheetClose className=' rounded-md bg-blue p-1.5'>
 								<X className='h-8 w-8' />
