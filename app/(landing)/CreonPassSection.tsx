@@ -30,7 +30,7 @@ export const CreonPassSection = () => (
 			{bonusOfUsingCreon.map(bonus => (
 				<div
 					key={bonus}
-					className='p-[12px 18px 16px 18px] mt-[10px] flex items-center rounded-[6px] border-[1px] border-greyLine  px-[18px]'>
+					className='mt-[10px] flex items-center rounded-[6px] border-[1px] border-greyLine p-[18px]  px-[18px]'>
 					<p className='text-md text-white'> {bonus}</p>
 				</div>
 			))}

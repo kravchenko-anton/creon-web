@@ -53,7 +53,7 @@ export const NavigationBar = () => (
 							{element.title}
 						</a>
 						{element.isSoon ? (
-							<div className='z-50 rounded-full bg-black px-1.5 py-0.5'>
+							<div className='z-50 flex h-[18px] items-center rounded-full bg-black px-1.5 text-[10px] font-bold uppercase'>
 								<p className=' gradientText'>Soon</p>
 							</div>
 						) : null}
