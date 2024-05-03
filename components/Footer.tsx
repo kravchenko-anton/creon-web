@@ -43,7 +43,7 @@ const SocialMediaLinks = [
 ]
 
 export const Footer = () => <div
-	className=" h-[84px] z-50 items-center flex justify-between px-[8%]">
+	className="md:h-[84px] z-50 items-center md:flex justify-between px-[2%] md:px-[8%]">
 	<div className='flex gap-[90px]'>
 		<p className="text-sm text-white font-light">
 			© Creon 2023. All rights reserved.
@@ -63,7 +63,7 @@ export const Footer = () => <div
 				}
 		</div>
 	</div>
-	<div className="flex items-center gap-14 z-50">
+	<div className="flex my-4 md:my-0 items-center gap-14 z-50">
 
 
 	<Image src={require('../public/images/Niftables-logo.svg')} alt={'Niftables'} width={200} height={40} />

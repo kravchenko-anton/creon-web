@@ -3,10 +3,10 @@ import type { FC } from 'react'
 import { settings } from './settings'
 import type { ButtonProperties } from './types'
 
-const Button: FC<ButtonProperties> = ({
+const Button: FC<ButtonProperties> =
+  ({
                                           children,
                                           fullWidth,
-                                          size = 'md',
                                           variant = 'outline',
                                           disabled = false,
                                           isLoading = false,

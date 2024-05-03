@@ -32,18 +32,18 @@ interface NewsElementType {
 }
 
 const NewsElement = ({ title, description, image }:NewsElementType) => <div>
-	<div className="flex gap-[30px] h-[300px] mb-[20px]  bg-[#13171D] bg-opacity-60  rounded-md overflow-hidden z-50">
-		<div className="w-2/3 z-50 pr-0 p-[25px] 3xl:p-[40px]">
+	<div className="block md:flex md:gap-[30px] md:h-[280px] mb-[20px] bg-[#13171D] bg-opacity-60  rounded-md overflow-hidden z-50">
+		<div className="md:w-2/3 z-50 pr-0 p-[10px] md:p-[15px] 3xl:p-[40px]">
 			<h3
-				className={cn(`text-3xl uppercase pb-[15px] xl:pb-[25px]`, monument.className)}
+				className={cn(`text-xl xl:text-xl 2xl:text-3xl uppercase pb-[15px] xl:pb-[20px]`, monument.className)}
 			>
 				{title}
 			</h3>
-			<p className="text-white font-light text-sm xl:text-md">
+			<p className="text-white font-light  md:text-sm 2xl:text-md">
 				{description}
 			</p>
 		</div>
-		<div className='z-50 items-end w-1/3'>
+		<div className='z-50 md:items-end md:w-1/3'>
 			<Image width={453} height={300} className='h-full w-full' src={image} alt={title} />
 		</div>
 	</div>
@@ -53,17 +53,16 @@ export const NewsSection = () => <div className={cn(`mt-[230px]`)}>
 	<div className="relative h-full">
 		<video loop autoPlay muted preload="none"
 					 className=" absolute inset-0  object-cover z-[-1] h-fit"
-			// add overflow video
 		>
 			<source src="../videos/roadmap-video.mp4" type="video/mp4" />
 		</video>
 		<div
-			className="absolute w-screen h-screen bg-gradient-to-b from-[#000000] via-[rgba(59,139,255,0.1)]"
+			className="absolute w-screen z-[-1] h-screen bg-gradient-to-b from-[#000000] via-[rgba(59,139,255,0.1)]"
 		/>
 		<div
-			className="absolute w-screen h-screen bottom-0 bg-gradient-to-t from-[#000000] via-[rgba(59,139,255,0.1)]"
+			className="absolute w-screen h-screen z-[-1] bottom-0 bg-gradient-to-t from-[#000000] via-[rgba(59,139,255,0.1)]"
 		/>
-		<div className="px-[8%]">
+		<div className="px-[2%] z-50 overflow-hidden xl:px-[8%]">
 			{
 				NewsFeed.map((news) => <NewsElement key={news.title} {...news} />)
 			}

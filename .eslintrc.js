@@ -25,9 +25,7 @@ module.exports = {
 		sourceType: 'module'
 	},
 	rules: {
-		"react/prop-types": "off",
-		'unicorn/prefer-date-now': 'off',
-		'unicorn/no-abusive-eslint-disable': 'off',
+
 		'react/jsx-no-leaked-render': 2,
 		'react/jsx-no-bind': [
 			'error',
@@ -213,6 +211,10 @@ module.exports = {
 		],
 
 		// disabled rules
+		"unicorn/prefer-module": "off",
+		"react/prop-types": "off",
+		'unicorn/prefer-date-now': 'off',
+		'unicorn/no-abusive-eslint-disable': 'off',
 		'@typescript-eslint/ban-ts-comment': 0,
 		'@typescript-eslint/no-unsafe-assignment': 0,
 		'@typescript-eslint/no-array-constructor': 0,

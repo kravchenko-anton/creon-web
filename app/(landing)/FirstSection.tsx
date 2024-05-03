@@ -18,18 +18,17 @@ export const FirstSection = () => <div className="min-h-screen">
 		{
 			//  25% for adaptability since 480px out of 1920 is 25%
 		}
-		<div className={cn("flex absolute w-full bottom-20 items-center mt-auto px-[8%]")}>
+		<div className={cn("flex absolute w-full bottom-20 items-center mt-auto px-[2%] md:px-[8%]")}>
 			<div className="z-10">
 				<div className="mt-auto">
 					<h1
-						className={cn(`text-5xl xl:text-6xl`, monument.className)}
+						className={cn(`text-2xl md:text-5xl xl:text-6xl`, monument.className)}
 					>
 						The world's first <br /> platform for Tokenizing <br /> AI
 						blockchain projects
 					</h1>
 					<h3
-						className={`mt-10 
-                            p-1 font-bold text-md xl:text-xl w-fit border-b border-t gradientText`}
+						className='mt-[40px] p-1 font-bold text-md xl:text-xl w-fit border-b border-t gradientText'
 					>
 						Hold the Creon Pass NFT and earn passive income from AI Tools
 					</h3>

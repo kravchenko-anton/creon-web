@@ -32,28 +32,28 @@ interface ComingSoonElementType {
 }
 
 const ComingSoonElement = ({ heading, subHeading, picture, description }:ComingSoonElementType) => <div
-		className="bg-[#13171D] bg-opacity-60 rounded-lg relative p-8 pl-0 w-[33%]">
+		className="bg-[#13171D] mb-8 md:mb-0 bg-opacity-60 rounded-lg relative p-2 xl:p-8 pl-0 md:w-[33%]">
 		<p className='uppercase text-[12px] font-extrabold bg-white p-1 rounded-full absolute -top-3 right-5'>Coming soon</p>
-		<div className='h-[180px]'>
+		<div className='pt-4 xl:pt-0 xl:h-[180px]'>
 			<h3
-				className={cn(`text-3xl uppercase pb-[30px] pl-8`, monument.className)}
+				className={cn(`text-3xl uppercase pl-2 xl:pb-[30px] xl:pl-8`, monument.className)}
 			>
 				{heading}
 			</h3>
-			<h3 className="font-bold mb-[40px] pl-8  gradientText text-xl not-italic"> {subHeading}</h3>
+			<h3 className="font-bold mb-[40px] pl-2 xl:pl-8  gradientText text-xl not-italic"> {subHeading}</h3>
 		</div>
 		<Image alt={'Creon'} width={423}
 					 height={234}
 					 src={picture}
 		/>
 
-		<p className="text-white font-light text-md pl-8 mt-[30px]">
+		<p className="text-white font-light text-md xl:text-xl pl-2 mb-2 xl:pl-8 mt-[30px]">
 			{description}
 		</p>
 	</div>
 
 
-export const ComingSoonSection = 	() => <div className={cn(`mx-[8%]  flex justify-between  gap-[40px] mt-[230px] `)}>
+export const ComingSoonSection = 	() => <div className={cn(`mx-[2%] xl:mx-[8%]  md:flex md:justify-between md:gap-[15px]  xl:gap-[40px] mt-[230px] `)}>
 		{
 			ComingSoonElementsList.map((element) => <ComingSoonElement key={element.heading} {...element} />)
 		}

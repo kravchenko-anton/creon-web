@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import { satoshi } from '@/public/font/font'
 
 

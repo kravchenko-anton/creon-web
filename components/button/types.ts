@@ -1,5 +1,4 @@
 import type { ButtonHTMLAttributes, DetailedHTMLProps } from 'react'
-import { SizeProperties } from '@/utils/types'
 
 export type DefaultButtonProperties = Pick<
 	DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>,
@@ -7,8 +6,7 @@ export type DefaultButtonProperties = Pick<
 >
 
 export interface ButtonProperties
-	extends DefaultButtonProperties,
-		SizeProperties {
+	extends DefaultButtonProperties{
 	isLoading?: boolean
 	disabled?: boolean
 	variant?: 'rainbow' | 'outline'
