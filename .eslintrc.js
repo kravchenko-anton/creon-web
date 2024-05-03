@@ -25,7 +25,6 @@ module.exports = {
 		sourceType: 'module'
 	},
 	rules: {
-
 		'react/jsx-no-leaked-render': 2,
 		'react/jsx-no-bind': [
 			'error',
@@ -89,8 +88,8 @@ module.exports = {
 		'unicorn/filename-case': [
 			'error',
 			{
-				case:  "pascalCase",
-				ignore: ['use', 'App', 'page']
+				case: 'pascalCase',
+				ignore: ['use', 'App', 'page', 'layout', 'settings', 'types']
 			}
 		],
 		'unicorn/better-regex': 2,
@@ -211,8 +210,8 @@ module.exports = {
 		],
 
 		// disabled rules
-		"unicorn/prefer-module": "off",
-		"react/prop-types": "off",
+		'unicorn/prefer-module': 'off',
+		'react/prop-types': 'off',
 		'unicorn/prefer-date-now': 'off',
 		'unicorn/no-abusive-eslint-disable': 'off',
 		'@typescript-eslint/ban-ts-comment': 0,

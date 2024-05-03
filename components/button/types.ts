@@ -5,8 +5,7 @@ export type DefaultButtonProperties = Pick<
 	'onClick' | 'type' | 'disabled' | 'children' | 'className' | 'style'
 >
 
-export interface ButtonProperties
-	extends DefaultButtonProperties{
+export interface ButtonProperties extends DefaultButtonProperties {
 	isLoading?: boolean
 	disabled?: boolean
 	variant?: 'rainbow' | 'outline'

@@ -7,15 +7,15 @@ import { NewsSection } from '@/app/(landing)/NewsSection'
 import { Footer } from '@/components/Footer'
 
 const Page = () => (
-		<main>
-			<FirstSection />
-			<CreonPassSection />
-			<ProfitingThroughSection />
-			<OutVisionSection />
-			<ComingSoonSection/>
-			<NewsSection/>
-			<Footer/>
-		</main>
-	)
+	<main>
+		<FirstSection />
+		<CreonPassSection />
+		<ProfitingThroughSection />
+		<OutVisionSection />
+		<ComingSoonSection />
+		<NewsSection />
+		<Footer />
+	</main>
+)
 
 export default Page
