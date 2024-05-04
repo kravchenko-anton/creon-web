@@ -38,32 +38,32 @@ const ComingSoonElement = ({
 	picture,
 	description
 }: ComingSoonElementType) => (
-	<div className='relative mb-8 rounded-lg bg-[#13171D]  bg-opacity-60 p-4  md:mb-0 md:w-[50%] xl:p-8 xl:pl-0'>
+	<div className='relative mb-8 rounded-lg bg-[#13171D]  bg-opacity-60  py-4 pr-4 md:mb-0  md:w-[50%] xl:py-8 xl:pr-8'>
 		<p className='absolute -top-3 right-5 rounded-full bg-white px-2 py-0.5 text-[12px] font-extrabold uppercase'>
 			Coming soon
 		</p>
-		<div className='pt-4 xl:h-[200px] xl:pt-0'>
+		<div className='pt-4 md:h-[150px] xl:h-[200px] xl:pt-0'>
 			<h3
 				className={cn(
-					` text-xl uppercase xl:pb-[30px] xl:pl-8 xl:text-3xl`,
+					` pl-4 text-xl uppercase md:pl-4 xl:pb-[30px] xl:pl-8 xl:text-3xl`,
 					monument.className
 				)}>
 				{heading}
 			</h3>
-			<h3 className='gradientText mb-[40px]  text-md  font-bold not-italic xl:pl-8 xl:text-xl'>
+			<h3 className='gradientText mb-[40px] pl-4  text-md  font-bold not-italic md:pl-4 xl:pl-8  xl:text-xl'>
 				{subHeading}
 			</h3>
 		</div>
-		<div className='max-h-[234px] max-w-[423px] overflow-hidden rounded-md xl:rounded-l-none'>
+		<div className='ml-4 max-h-[234px] max-w-[423px] overflow-hidden rounded-md md:ml-0 md:rounded-l-none'>
 			<Image
 				alt={'Creon'}
-				className='mx-auto   transition-all duration-300  hover:scale-125 md:mx-0 '
+				className='mx-auto  transition-all duration-300  hover:scale-125 md:mx-0 '
 				width={423}
 				height={234}
 				src={picture}
 			/>
 		</div>
-		<p className='mb-2 mt-[30px]  text-sm font-light text-white xl:pl-8 xl:text-xl'>
+		<p className='mb-2 mt-[30px]  pl-4 text-sm font-light text-white md:pl-4 xl:pl-8  xl:text-xl'>
 			{description}
 		</p>
 	</div>
