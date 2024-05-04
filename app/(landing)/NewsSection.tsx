@@ -54,7 +54,6 @@ const NewsElement = ({ title, description, image }: NewsElementType) => (
 					src={image}
 					alt={title}
 				/>
-				<div className='absolute h-full w-full bg-gradient-to-t from-[#3D6FFF] via-transparent to-[#9123FF] opacity-40' />
 			</div>
 		</div>
 	</div>

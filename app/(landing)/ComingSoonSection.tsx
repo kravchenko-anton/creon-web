@@ -42,7 +42,7 @@ const ComingSoonElement = ({
 		<p className='absolute -top-3 right-5 rounded-full bg-white px-2 py-0.5 text-[12px] font-extrabold uppercase'>
 			Coming soon
 		</p>
-		<div className='pt-4 xl:h-[180px] xl:pt-0'>
+		<div className='pt-4 xl:h-[200px] xl:pt-0'>
 			<h3
 				className={cn(
 					` text-xl uppercase xl:pb-[30px] xl:pl-8 xl:text-3xl`,
@@ -54,10 +54,10 @@ const ComingSoonElement = ({
 				{subHeading}
 			</h3>
 		</div>
-		<div className='overflow-hidden'>
+		<div className='max-h-[234px] max-w-[423px] overflow-hidden rounded-md xl:rounded-l-none'>
 			<Image
 				alt={'Creon'}
-				className='mx-auto  rounded-md transition-all duration-300 hover:scale-150'
+				className='mx-auto   transition-all duration-300  hover:scale-125 md:mx-0 '
 				width={423}
 				height={234}
 				src={picture}
