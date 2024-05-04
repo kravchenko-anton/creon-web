@@ -54,10 +54,10 @@ const ComingSoonElement = ({
 				{subHeading}
 			</h3>
 		</div>
-		<div className='ml-4 max-h-[234px] max-w-[423px] overflow-hidden rounded-md md:ml-0 md:rounded-l-none'>
+		<div className=' max-h-[234px] max-w-[423px] overflow-hidden rounded-md rounded-l-none md:ml-0'>
 			<Image
 				alt={'Creon'}
-				className='mx-auto  transition-all duration-300  hover:scale-125 md:mx-0 '
+				className='transition-all duration-300  hover:scale-125'
 				width={423}
 				height={234}
 				src={picture}
