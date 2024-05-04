@@ -45,7 +45,7 @@ const ComingSoonElement = ({
 		<div className='pt-4 md:h-[150px] xl:h-[200px] xl:pt-0'>
 			<h3
 				className={cn(
-					` pl-4 text-xl uppercase md:pl-4 xl:pb-[30px] xl:pl-8 xl:text-3xl`,
+					` pl-4 text-xl uppercase md:pl-4 xl:pb-[15px] xl:pl-8 xl:text-3xl`,
 					monument.className
 				)}>
 				{heading}
