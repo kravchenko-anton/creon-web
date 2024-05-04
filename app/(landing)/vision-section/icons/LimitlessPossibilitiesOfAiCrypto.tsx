@@ -1,7 +1,11 @@
 import React from 'react'
 import { cn } from '@/utils'
 
-export const LimitlessPossibilitiesOfAiCrypto = () => (
+export const LimitlessPossibilitiesOfAiCrypto = ({
+	active
+}: {
+	active: boolean
+}) => (
 	<svg
 		xmlns='http://www.w3.org/2000/svg'
 		width='100'
@@ -22,7 +26,8 @@ export const LimitlessPossibilitiesOfAiCrypto = () => (
 				fill='#FFF'
 				d='M22 45.037a6 6 0 013.094-5.25l22-12.178a6 6 0 015.812 0l22 12.178A6 6 0 0178 45.037v23.926a6 6 0 01-3.094 5.25l-22 12.178a6 6 0 01-5.812 0l-22-12.178A6 6 0 0122 68.963V45.037z'
 				className={cn(
-					'z-50 opacity-10 duration-300 ease-in-out hover:opacity-20'
+					'z-50 opacity-10 duration-300 ease-in-out ',
+					active && 'opacity-25'
 				)}
 			/>
 			<path

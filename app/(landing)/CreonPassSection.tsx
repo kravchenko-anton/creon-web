@@ -16,13 +16,13 @@ export const CreonPassSection = () => (
 		<div className='md:w-1/2'>
 			<h3
 				className={cn(
-					`border-b-[1px] border-greyLine pb-[30px] text-2xl uppercase md:text-5xl xl:text-6xl`,
+					`border-b-[1px] border-greyLine pb-[30px] text-xl uppercase md:text-5xl xl:text-6xl`,
 					monument.className
 				)}>
 				Creon Pass <br /> NFT
 			</h3>
 
-			<h3 className='gradientText  mb-[30px] pt-[30px] text-xl'>
+			<h3 className='gradientText  mb-[30px] pt-[30px] text-md md:text-xl'>
 				The Creon NFT pass unlocks access to AI projects, the Creon launchpad,
 				and a ticket to generate passive income through AI-driven tools
 			</h3>

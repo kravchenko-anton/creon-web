@@ -38,7 +38,7 @@ const ComingSoonElement = ({
 	picture,
 	description
 }: ComingSoonElementType) => (
-	<div className='relative mb-8 rounded-lg bg-[#13171D]  bg-opacity-60 p-4 duration-300 ease-in-out hover:-translate-y-4 md:mb-0 md:w-[50%] xl:p-8 xl:pl-0'>
+	<div className='relative mb-8 rounded-lg bg-[#13171D]  bg-opacity-60 p-4  md:mb-0 md:w-[50%] xl:p-8 xl:pl-0'>
 		<p className='absolute -top-3 right-5 rounded-full bg-white px-2 py-0.5 text-[12px] font-extrabold uppercase'>
 			Coming soon
 		</p>
@@ -54,15 +54,16 @@ const ComingSoonElement = ({
 				{subHeading}
 			</h3>
 		</div>
-		<Image
-			alt={'Creon'}
-			className='mx-auto rounded-md'
-			width={423}
-			height={234}
-			src={picture}
-		/>
-
-		<p className='mb-2 mt-[30px]  text-sm font-light text-white xl:pl-8 xl:text-md xl:text-xl'>
+		<div className='overflow-hidden'>
+			<Image
+				alt={'Creon'}
+				className='mx-auto  rounded-md transition-all duration-300 hover:scale-150'
+				width={423}
+				height={234}
+				src={picture}
+			/>
+		</div>
+		<p className='mb-2 mt-[30px]  text-sm font-light text-white xl:pl-8 xl:text-xl'>
 			{description}
 		</p>
 	</div>

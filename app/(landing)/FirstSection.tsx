@@ -18,9 +18,7 @@ export const FirstSection = () => (
 			<div className='absolute h-screen w-screen bg-gradient-to-b from-[rgba(171,35,255,0.2)] via-[rgba(59,139,255,0.2)] to-[#000000]' />
 		</div>
 		<NavigationBar />
-		{
-			//  25% for adaptability since 480px out of 1920 is 25%
-		}
+
 		<div
 			className={cn(
 				'absolute bottom-20 mt-auto flex w-full items-center px-[2%] md:px-[8%]'
@@ -29,7 +27,7 @@ export const FirstSection = () => (
 				<div className='mt-auto'>
 					<h1
 						className={cn(
-							`text-2xl md:text-5xl xl:text-6xl`,
+							`text-md md:text-5xl xl:text-6xl`,
 							monument.className
 						)}>
 						The world's first <br /> platform for Tokenizing <br /> AI

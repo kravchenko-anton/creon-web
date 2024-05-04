@@ -35,12 +35,12 @@ const navigationElements = [
 ]
 
 export const NavigationBar = () => (
-	<div className='z-50 mx-auto flex items-center justify-between px-[5%] pt-7'>
+	<div className='z-50 mx-auto flex items-center justify-between px-[2%] pt-7 md:px-[5%]'>
 		<Image
 			priority
 			objectFit='contain'
 			width={140}
-			className='z-50'
+			className='z-[10000000] h-[25px] w-[100px] md:h-[35px] md:w-[140px]'
 			height={35}
 			src={Logo}
 			alt='Logo'

@@ -15,7 +15,7 @@ const Button: FC<ButtonProperties> = ({
 	<button
 		disabled={disabled || isLoading}
 		className={cn(
-			'cursor-pointer text-md font-bold duration-300 ease-in-out',
+			'cursor-pointer text-md font-bold transition-all duration-300 ease-in-out',
 			settings.variant[variant],
 			(disabled || isLoading) && 'cursor-not-allowed opacity-50',
 			fullWidth ? 'w-full' : '',

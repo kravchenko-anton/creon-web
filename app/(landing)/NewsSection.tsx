@@ -32,11 +32,11 @@ interface NewsElementType {
 
 const NewsElement = ({ title, description, image }: NewsElementType) => (
 	<div>
-		<div className='z-50 mb-[20px] block overflow-hidden rounded-md bg-[#13171D] bg-opacity-60 duration-300 ease-in-out hover:-translate-y-2  md:flex md:h-[300px] md:gap-[30px]'>
-			<div className='3xl:p-[40px] z-50 p-[10px] pr-0 md:w-2/3 md:p-[15px]'>
+		<div className='z-50 mb-[20px] block overflow-hidden rounded-md bg-[#13171D] bg-opacity-60 duration-300 ease-in-out  md:flex  md:gap-[30px]'>
+			<div className='3xl:p-[40px] z-50 p-[10px] pr-0 md:w-4/5 md:p-[15px]'>
 				<h3
 					className={cn(
-						`3xl:text-3xl pb-[15px] text-xl uppercase xl:pb-[20px] xl:text-xl 2xl:text-2xl`,
+						`3xl:text-3xl pb-[10px] text-md uppercase xl:pb-[20px] xl:text-xl 2xl:text-2xl`,
 						monument.className
 					)}>
 					{title}
@@ -45,14 +45,16 @@ const NewsElement = ({ title, description, image }: NewsElementType) => (
 					{description}
 				</p>
 			</div>
-			<div className='z-50 md:w-1/3 md:items-end'>
+			<div className='relative z-50 my-auto flex h-full justify-center md:items-end'>
 				<Image
-					width={453}
+					objectFit='cover'
+					width={450}
+					className=''
 					height={300}
-					className='h-full w-full'
 					src={image}
 					alt={title}
 				/>
+				<div className='absolute h-full w-full bg-gradient-to-t from-[#3D6FFF] via-transparent to-[#9123FF] opacity-40' />
 			</div>
 		</div>
 	</div>
@@ -66,11 +68,11 @@ export const NewsSection = () => (
 				autoPlay
 				muted
 				preload='none'
-				className=' absolute inset-0  z-[-1] h-screen w-screen object-cover'>
+				className=' absolute inset-0  z-[-1] h-full w-screen object-cover'>
 				<source src='../videos/roadmap-video.mp4' type='video/mp4' />
 			</video>
-			<div className='absolute z-[-1] h-screen w-screen bg-gradient-to-b from-[#000000] via-[rgba(59,139,255,0.1)]' />
-			<div className='absolute  z-[-1] h-screen w-screen bg-gradient-to-t from-[#000000] via-[rgba(59,139,255,0.1)] to-45%' />
+			<div className='absolute z-[-1] h-full w-screen bg-gradient-to-b from-[#000000] via-[rgba(59,139,255,0.1)]' />
+			<div className='absolute  z-[-1] h-full w-screen bg-gradient-to-t from-[#000000] via-[rgba(59,139,255,0.1)] to-45%' />
 			<div className='z-50 overflow-hidden px-[2%] xl:px-[8%]'>
 				{NewsFeed.map(news => (
 					<NewsElement key={news.title} {...news} />

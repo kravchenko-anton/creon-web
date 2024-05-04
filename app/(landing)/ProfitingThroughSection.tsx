@@ -6,14 +6,14 @@ export const ProfitingThroughSection = () => (
 		<div className='mb-[76px]'>
 			<h3
 				className={cn(
-					`text-2xl uppercase md:text-5xl xl:text-6xl`,
+					`text-xl uppercase md:text-5xl xl:text-6xl`,
 					monument.className
 				)}>
 				Profiting Through
 			</h3>
 			<h3
 				className={cn(
-					`gradientText ml-auto mt-[20px] w-full text-end  text-2xl uppercase md:text-3xl xl:text-3xl`,
+					`gradientText ml-auto mt-[20px]  text-end  text-xl uppercase md:text-3xl xl:text-3xl`,
 					monument.className
 				)}>
 				AI Innovation & Decentralization
